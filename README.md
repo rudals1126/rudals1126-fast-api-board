@@ -1,1 +1,1 @@
-# rudals1126-fast-api-board
+# fast-api-board
