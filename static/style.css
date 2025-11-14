@@ -1,0 +1,41 @@
+/* 전체 문서에 적용되는 기본 스타일 */
+body {
+    font-family: "맑은 고딕", sans-serif; /* 글꼴 지정, 맑은 고딕 우선 */
+    margin: 0; /* 브라우저 기본 여백 제거 */
+    padding: 0; /* 브라우저 기본 패딩 제거 */
+    background-color: #f9f9f9; /* 페이지 배경색 연한 회색 */
+}
+
+/* 헤더 영역 스타일 */
+header {
+    background-color: #0077cc; /* 헤더 배경 파란색 */
+    color: white; /* 글자 색 흰색 */
+    padding: 1rem; /* 내부 여백 1rem */
+    text-align: center; /* 글자 중앙 정렬 */
+}
+
+/* 내비게이션 링크 스타일 */
+nav a {
+    color: white; /* 링크 글자 색 흰색 */
+    margin: 0 10px; /* 좌우 여백 10px */
+    text-decoration: none; /* 밑줄 제거 */
+}
+
+/* 내비게이션 링크에 마우스 올렸을 때 스타일 */
+nav a:hover {
+    text-decoration: underline; /* 마우스 올리면 밑줄 표시 */
+}
+
+/* 메인 콘텐츠 영역 스타일 */
+main {
+    padding: 2rem; /* 내부 여백 2rem */
+    text-align: center; /* 글자 중앙 정렬 */
+}
+
+/* 푸터 영역 스타일 */
+footer {
+    background-color: #eee; /* 배경 밝은 회색 */
+    text-align: center; /* 글자 중앙 정렬 */
+    padding: 1rem; /* 내부 여백 1rem */
+    margin-top: 2rem; /* 위쪽 마진 2rem */
+}

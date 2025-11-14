@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>아이디 찾기</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>아이디 찾기</h1>
+    <form action="/users/find-id" method="post">
+        <label for="username">이름:</label>
+        <input type="text" name="username" id="username" required><br>
+        <label for="email">이메일:</label>
+        <input type="text" name="email" id="email" required><br>
+        <button type="submit">아이디 찾기</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8"> <!-- 문서 문자 인코딩 UTF-8 설정 -->
+    <title>로그인</title> <!-- 브라우저 탭 제목 -->
+    <link rel="stylesheet" href="/static/style.css"> <!-- 외부 CSS 파일 연결 -->
+</head>
+<body>
+    <h1>로그인</h1> <!-- 페이지 제목 -->
+
+    <!-- 로그인 폼 -->
+    <form action="/users/login" method="post"> <!-- POST 방식으로 로그인 정보 전송 -->
+        <label for="email">이메일:</label> <!-- 이메일 입력 라벨 -->
+        <input type="text" name="email" id="email" required><br> <!-- 이메일 입력 필드 -->
+
+        <label for="password">비밀번호:</label> <!-- 비밀번호 입력 라벨 -->
+        <input type="password" name="password" id="password" required><br> <!-- 비밀번호 입력 필드 -->
+
+        <button type="submit">로그인</button> <!-- 로그인 버튼 -->
+    </form>
+
+    <hr> <!-- 구분선 -->
+
+    <!-- 계정 관련 링크 -->
+    <div>
+        <h3>계정 찾기</h3> <!-- 섹션 제목 -->
+        <a href="/find-id">아이디 찾기</a> | <!-- 아이디 찾기 페이지 링크 -->
+        <a href="/reset-password">비밀번호 찾기</a> <!-- 비밀번호 초기화 페이지 링크 -->
+        <a href="/change-password">비밀번호 변경</a> <!-- 비밀번호 변경 페이지 링크 -->
+    </div>
+</body>
+</html>

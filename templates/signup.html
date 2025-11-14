@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8"> <!-- 문서 문자 인코딩 UTF-8 설정 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 모바일 화면 대응 -->
+    <title>회원가입</title> <!-- 브라우저 탭 제목 -->
+    <link rel="stylesheet" href="/static/style.css"> <!-- 외부 CSS 파일 연결 -->
+</head>
+<body>
+    <!-- 헤더 영역 -->
+    <header>
+        <h1>회원가입</h1> <!-- 페이지 제목 -->
+        <nav> <!-- 내비게이션 메뉴 -->
+            <a href="/">메인</a> <!-- 메인 페이지 링크 -->
+            <a href="/login">로그인</a> <!-- 로그인 페이지 링크 -->
+            <a href="/posts">게시글</a> <!-- 게시글 페이지 링크 -->
+        </nav>
+    </header>
+
+    <!-- 메인 콘텐츠 영역 -->
+    <main>
+        <form action="/users/" method="post"> <!-- 회원가입 데이터를 POST 방식으로 전송 -->
+            <label>이름: <input type="text" name="username" required></label><br> <!-- 사용자 이름 입력 -->
+            <label>이메일: <input type="email" name="email" required></label><br> <!-- 이메일 입력 -->
+            <label>비밀번호: <input type="password" name="password" required></label><br> <!-- 비밀번호 입력 -->
+            <button type="submit">회원가입</button> <!-- 제출 버튼 -->
+        </form>
+    </main>
+</body>
+</html>
